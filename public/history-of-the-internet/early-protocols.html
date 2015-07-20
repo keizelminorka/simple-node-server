@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Early Protocols</title>
+        <meta name="author" content="Keizel Minorka J. Boado">
+        <meta name="description" content="History of the Internet">
+        <meta="viewport" content"width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        <style>
+        
+            
+           
+            .whole { 
+                background-color:#f08080;
+                width: 1300px;
+                height:1500px;
+                margin:0px auto;
+                position:absolute;
+                left:170px;
+                padding: 30px;
+                box-sizing:border-box;
+            }    
+            .nav a {
+                background-color:#add8e6;
+                width:300px;
+                height:35px;
+                text-align:center;
+                margin:0px auto;
+                border-style:solid;
+                color:#f08080;
+                float:left;
+               border-color:#ffdab9;
+               font-size:25px;
+            }
+           
+            .nav {
+                position:fixed;
+                top:15px;
+                left:193px;
+                z-index:5;
+            }
+            .header {
+                background-color:black;
+                height:300px;
+                width:1200px;
+                position:relative;
+                top:60px;
+                left:200px;
+                color:#f08080;
+                font-size:150px;
+                font-family: "Tangerine";
+                padding:70px 20px;
+                text-align:center;
+                border-radius: 20px;
+                box-sizing:border-box;
+            }
+          .container {
+              width:1200px;
+              height:850px;
+              background-color:white;
+              border-color:#dd80dd;
+              border-radius:20px;
+              z-index:3;
+              position:relative;
+              top:90px;
+              left:200px;
+              padding:20px;
+              font-size:20px;
+              font-family:"Inconsolata";
+              box-sizing:border-box;
+          }
+          .box {
+              width:1200px;
+              height:150px;
+              background-color:#add8e6;
+              text-align:center;
+              font-size:15px;
+              font-family:"Inconsolata";
+              position:relative;
+              color:white;
+              top:130px;
+              left:195px;
+              padding:50px 90px;
+              box-sizing: border-box;
+              border-radius: 20px;
+          }
+            p { 
+                font-size:20px;
+                font-family:"Inconsolata";
+                text-indent:50px;
+                text-align:justify;
+              }
+            dl {font-size:20px;
+                font-family:"Inconsolata";
+            }
+            h2 {
+                font-family:"Tangerine";
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="whole"></div>
+        
+        <div class="nav ">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Related Topics</a>
+        </div>
+        
+        
+        <div class="header">Internet Protocols </div>
+       
+        
+        
+        
+        <div class="container "> 
+        <h2>Overview:</h2>
+        
+        <p> It is possible for the computers to communicate. It is just necessary for them to follow standard methods in order to understand each other and these are called protocols. There are various protocols developed in the mid-1970 when DARPA became interested in connecting different computers and enable them to communicate. This lead to the funding of Stanford Universities and Bolt, Beranek, and Newman (BBN) which resulted to the internet protocols in the late 1970s. 
+            Information sent over the internet is divided into packets and are sent separately either by Packet Switching or by Circuit switching. Packet switching follows the same path for all the packets while the circuit switching does not. Each packets are addressed to specific IP address to arrive in its destination correctly since all the computers have their own IP address.
+            <br>Common Internet Protocols:
+            <dl>
+            <dt>TCP/IP</dt> 
+            <dd>This is the backbone protocol which is the basis for determining what internet is. It was developed in the 1970s in California by Vinton Cerfs, Bob Kahn, Bob Braden,Jon Postel and other members of the networking group headed by Steve Crocker.
+            <br>The function of these two protocols is complementary to each other. Transmission Control Protocol (TCP) is the one responsible for the arrangement of packets. It is responsible for putting back together all the packets in order and also for requesting for the packets to be resent if necessary. Internet Protocol (IP) on the other hand is the one responsible for directing the information to the proper address.</dd>
+            <dt>UDP</dt>
+            <dd>This is a connectionless TCP which has smaller packets, no error recovery and does not guarantee an in ordered delivery of packets thus have lower reliability as well. If the packets being sent are lost on its way, this protocol does not compensate for it. There is also no congestion control in this protocol that when your network is congested, UDP will just try to fill up your data.</dd>
+            <dt>SMTP and POP3</dt>
+            <dd>These two protocols are used for emails. Simple Mail Transfer Protocol (SMTP) is used for sending emails while Post Office Protocols are used for receiving. </dd>
+            </dl>
+            </p>
+        </div>
+        
+      
+        
+        <div class="box ">Keizel Minorka Boado <br> SY:2014-2016 <br> ComSci2</div>
+    </body>
+</html>
