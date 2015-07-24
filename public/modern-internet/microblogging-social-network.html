@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Micro-blogging</title>
+        <meta name="author" content="Keizel Minorka J. Boado">
+        <meta name="description" content="Micro-blogging">
+        <meta="viewport" content"width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        <style>
+        
+           
+            body {
+                    background-image: url("images.jpg");
+            }
+            .clearfix:after {
+                display:block;
+                clear:both;
+            }
+             
+            /*----- Menu Outline -----*/
+            .menu-wrap {
+                width:100%;
+                box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+                background:#3e3436;
+            }
+             
+            .menu {
+                width:1000px;
+                margin:0px auto;
+                position:fixed;
+                top:-10px;
+                left:350px;
+                z-index:9;
+            }
+             
+            .menu li {
+                margin:0px;
+                list-style:none;
+                font-family:'Ek Mukta';
+                
+            }
+             
+            .menu a {
+                transition:all linear 0.15s;
+                color:black;
+                background-color:#919191;
+                width:150px;
+                text-align:center;
+            }
+             
+            .menu li:hover > a, .menu .current-item > a {
+                text-decoration:none;
+                color:#be5b70;
+            }
+             
+            .menu .arrow {
+                font-size:11px;
+                line-height:0%;
+            }
+             
+            /*----- Top Level -----*/
+            .menu > ul > li {
+                float:left;
+                display:inline-block;
+                position:relative;
+                left:-100px;
+                font-size:20px;
+                border:5px solid black;
+            }
+             
+            .menu > ul > li > a {
+                padding:10px 40px;
+                display:inline-block;
+                text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+            }
+             
+            .menu > ul > li:hover > a, .menu > ul > .current-item > a {
+                background:#2e2728;
+            }
+             
+            /*----- Bottom Level -----*/
+            .menu li:hover .sub-menu {
+                z-index:1;
+                opacity:1;
+            }
+             
+            .sub-menu {
+                width:160%;
+                padding:5px 0px;
+                position:absolute;
+                top:100%;
+                left:0px;
+                z-index:-1;
+                opacity:0;
+                transition:opacity linear 0.15s;
+                
+                background:#2e2728;
+            }
+             
+            .sub-menu li {
+                display:block;
+                font-size:16px;
+            }
+             
+            .sub-menu li a {
+                padding:10px 20px;
+                display:block;
+                
+            }
+             
+            .sub-menu li a:hover, .sub-menu .current-item a {
+                background:#3e3436;
+            }
+            .header {
+                background-color:black;
+                height:300px;
+                width:1200px;
+                position:relative;
+                top:60px;
+                left:200px;
+                color:#8b7d7b;
+                font-size:150px;
+                font-family: "Dancing Script";
+                padding:70px 20px;
+                text-align:center;
+                border-radius: 20px;
+                box-sizing:border-box;
+            }
+          .container {
+              width:1200px;
+              height:1100px;
+              background-color:white;
+              border-color:#dd80dd;
+              border-radius:20px;
+              z-index:3;
+              position:relative;
+              top:90px;
+              left:200px;
+              padding:20px;
+              font-size:20px;
+              font-family:"Inconsolata";
+              box-sizing:border-box;
+          }
+          .box {
+              width:1200px;
+              height:150px;
+              background-color:black;
+              text-align:center;
+              font-size:15px;
+              font-family:"Inconsolata";
+              position:relative;
+              color:white;
+              top:50px;
+              left:-15px;
+              padding:50px 90px;
+              box-sizing: border-box;
+              border-radius: 20px;
+          }
+            p { 
+                font-size:25px;
+                font-family:"Inconsolata";
+                text-indent:50px;
+                text-align:justify;
+              }
+            img {
+                  padding: 20px;
+                  margin:0px auto;
+                  display:block;
+                  
+            }
+            ul {
+                font-size:25px;
+                font-family:'Inconsolata';
+            }
+            li {
+                font-family:'Inconsolata';
+                font-size:25px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="whole"></div>
+        
+         <div class="menu-wrap">
+    <nav class="menu">
+        <ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Related Topics <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="network-protocols.html">Network Protocols</a></li>
+                    <li><a href="email.html">Email</a></li>
+                    <li><a href="search-engines.html">Search Engine</a></li>
+                    <li><a href="blogging.html">Blogging</a></li>
+                    <li><a href="video-streaming.html">Video Streaming</a></li>
+                    <li><a href="microblogging-social-network.html">Microblogging</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+</div>
+        
+        <div class="header">Micro-Blogging</div>
+       
+        
+        <div class="container "> 
+        <img src='data/images.jpg' alt='email' width='500px' height='250 px'>
+        <p id='par1'></p>
+        .<!--http://www.archiveteam.org/index.php?title=GeoCities-->
+        <p id='par2'></p>
+        <!--http://www.theglobe.com/-->
+        <p id='par3'></p>
+        <!--https://net.educause.edu/ir/library/pdf/ELI7051.pdf--> 
+       
+        <script src="data/microblogging-social-network.js"></script>
+        <div class="box ">Keizel Minorka Boado <br> Summer SY:2014-2015 <br> ComSci2</div>
+    </body>
+</html>
